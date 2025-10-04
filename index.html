@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UAGO | L.B EARLY ALPHA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="intro-overlay" class="intro-overlay">
+    <div class="intro-text">click anywhere</div>
+  </div>
+
+
+  <video id="bg-video" class="bg-video">
+    <source src="media/background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+
+  <div class="audio-wrap">
+    <audio id="bg-audio" src="media/music.mp3" loop></audio>
+    <div id="audio-controls" class="hidden">
+  <button id="play-pause" aria-label="Play/Pause">⏯</button>
+  <button id="mute-unmute" aria-label="Mute/Unmute">🔊</button>
+  <span id="time-display">0:00 / 0:00</span>
+  <input id="volume-bar" type="range" min="0" max="1" step="0.01" value="1">
+</div>
+  </div>
+
+  <div class="profile" id="profile" aria-hidden="true">
+    <div class="avatar">
+      <img src="media/pfp.gif" alt="Profile Picture">
+    </div>
+    <h1 class="username" data-userid="1">UAGO</h1>
+  <div class="stats">
+  <div class="stat" data-tooltip="Custom Badge">
+    <img src="icons/cus2.gif" alt="Custom Badge">
+  </div>
+  <div class="stat" data-tooltip="Verified">
+    <img src="icons/check.png" alt="Verified">
+  </div>
+  <div class="stat" data-tooltip="Premium">
+    <img src="icons/diamond.png" alt="Premium">
+  </div>
+  <div class="stat" data-tooltip="Developer">
+    <img src="icons/dev.png" alt="Developer">
+  </div>
+  <div class="stat" data-tooltip="Staff">
+    <img src="icons/staff.png" alt="Staff">
+  </div>
+  <div class="stat" data-tooltip="Owner">
+    <img src="icons/crown.png" alt="Owner">
+  </div>
+<div class="stat" data-tooltip="Custom Badge2">
+    <img src="icons/cus1.gif" alt="Custom Badge2">
+  </div>
+</div>
+
+
+
+    <div class="tabs">
+      <button class="tab-button active" onclick="showTab('about')">About</button>
+      <button class="tab-button" onclick="showTab('creations')">Creations</button>
+    </div>
+
+    <div id="about" class="tab-content active">
+      <div class="ascii">
+<pre>
+                                     ⣿⣿⠋⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠉⢿⣿
+                                     ⣿⠁⡀⡀⠙⢿⣿⣿⣿⣿⣿⣿⡿⠁⡀⡀⡀⣿
+                                     ⣿⡀⡀⡀⡀⡀⠻⣿⣿⣿⣿⠟⡀⡀⡀⡀⡀⣿
+                                     ⣿⡀⡀⡀⡀⡀⡀⠈⣿⣿⠃⡀⡀⡀⡀⡀⡀⣿
+                                     ⣿⡀⡀⡀⡀⣠⣶⣿⣿⣿⣶⣦⣀⡀⡀⡀⢰⣿
+                                     ⣿⡀⡀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⡀⡀⣿
+                                     ⣿⠂⢰⣿⣿⣿⣿⣿⣿⣽⣿⣿⣿⣿⣿⡀⣤⣿
+                                     ⡏⢀⣹⣿⣿⣿⢻⣿⢿⣳⣿⠳⡿⣽⣷⡀⡀⣿
+                                     ⣿⣿⢏⣿⣿⣡⣛⣿⣿⣿⡿⣩⢳⢿⣇⣿⣿⣿
+                                     ⣿⣿⠸⣿⡇⠂⠈⢹⢷⢿⡄⡀⡀⡿⣷⢹⣿⣿
+                                     ⣿⣿⣮⣿⡇⣄⣀⣿⢿⣿⣄⣀⡞⣗⠧⣹⣿⣿
+                                     ⣿⣿⣄⡀⠇⠿⣿⣏⣛⣋⣯⣟⠴⠋⡀⣽⣿⣿
+                                     ⣿⣿⣿⡟⠘⣶⠙⡀⡀⡀⠈⠋⣷⡌⠐⣿⣿⣿
+                                     ⣿⣿⢟⣾⠿⠻⡀⡀⡀⡀⡀⡀⢿⣹⣷⡻⣿⣿
+                                     ⣿⣿⠟⣠⠟⠁⡀⡀⡀⡀⡀⡀⡀⡀⠙⢟⣿⣿
+                                     ⣿⣿⠋⡀⡀⣀⣀⡀⡀⡀⡀⣤⣶⣌⠠⣤⣟⣿
+                                     ⣿⣚⣽⠿⠿⣿⣿⣷⣶⣤⣿⣿⢟⣻⡻⢿⣯⣿
+                                     ⣿⣤⣶⢺⣿⣷⣨⣙⠛⠛⢉⡺⣿⣗⣿⣧⣶⣿
+                                     ⣿⣿⣿⣮⣽⣠⣿⣿⣿⣿⣿⣷⣭⣴⣿⣿⣿⣿
+</pre>
+      </div>
+      <div class="socials">
+        <a href="https://pekora.zip/users/6714/profile/" target="_blank" aria-label="Korone">
+          <img src="icons/twitter.png" alt="Twitter">
+        </a>
+        <a href="https://youtube.com/@januaryyyyyyyyyyyyyyyyyyyyyyy/" target="_blank" aria-label="Youtube">
+          <img src="icons/youtube.png" alt="Youtube">
+        </a>
+        <a href="https://tiktok.com/@uago_" target="_blank" aria-label="TikTok">
+          <img src="icons/tiktok.png" alt="TikTok">
+        </a>
+        <a href="https://github.com/ja-nuary" target="_blank" aria-label="GitHub">
+          <img src="icons/github.png" alt="GitHub">
+        </a>
+      </div>
+    </div>
+
+    <div id="creations" class="tab-content">
+      <p>Nothing yet!</p>
+    </div>
+  </div>
+<script>
+  function showTab(tabId) {
+    document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+    document.querySelector(`.tab-button[onclick="showTab('${tabId}')"]`).classList.add('active');
+    document.getElementById(tabId).classList.add('active');
+  }
+
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    const overlay = document.getElementById('intro-overlay');
+    const audio = document.getElementById('bg-audio');
+    const audioControls = document.getElementById('audio-controls');
+    const profile = document.getElementById('profile');
+    const playPauseBtn = document.getElementById('play-pause');
+    const muteBtn = document.getElementById('mute-unmute');
+    const video = document.getElementById('bg-video');
+    const timeDisplay = document.getElementById('time-display');
+    const volumeBar = document.getElementById('volume-bar');
+
+   
+    video.play().catch(()=>{});
+
+    function enterSite() {
+      overlay.classList.add('fade-out');
+      document.body.classList.add('entered');
+      profile.setAttribute('aria-hidden', 'false');
+      audioControls.classList.remove('hidden');
+
+      audio.volume = 0.1;
+      audio.play().catch(()=>{});
+
+      playPauseBtn.textContent = '⏸';
+      muteBtn.textContent = audio.muted ? '🔇' : '🔊';
+
+      setTimeout(() => overlay.style.display = 'none', 500);
+    }
+    
+    overlay.addEventListener('click', enterSite, { once: true });
+    overlay.addEventListener('touchstart', enterSite, { once: true });
+
+
+    playPauseBtn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        playPauseBtn.textContent = '⏸';
+      } else {
+        audio.pause();
+        playPauseBtn.textContent = '⏵';
+      }
+    });
+
+    muteBtn.addEventListener('click', () => {
+      audio.muted = !audio.muted;
+      muteBtn.textContent = audio.muted ? '🔇' : '🔊';
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      const formatTime = (t) => {
+        const m = Math.floor(t / 60);
+        const s = Math.floor(t % 60).toString().padStart(2, '0');
+        return `${m}:${s}`;
+      };
+      timeDisplay.textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration || 0)}`;
+    });
+
+    volumeBar.addEventListener('input', () => {
+      audio.volume = volumeBar.value;
+    });
+  });
+</script>
+
+</body>
+</html>
