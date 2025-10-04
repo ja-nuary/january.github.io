@@ -1,2 +1,0 @@
-# january.github.io
-Page
